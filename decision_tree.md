@@ -1,0 +1,6 @@
+### Decision Tree
+
+A decision tree is a type of machine learning model that helps in supervised classification situations.  Decision trees work by hierarchically splitting our sample space at a whole bunch of filter (or decision) points.  These groups would then follow their respective paths down the branch, splitting again and again until there are no more filters to be applied, and the model can make an safe and educated prediction about each data point's target.  These end points are called leaf nodes, because nothing grows past a leaf on a tree.
+
+There are a few things to keep inmind when deciding where and how to split your data. One of the most
+indicative metrics you can use to check the goodness of your split is entropy.  This is the measure of disorder in your set, for example if we had a 50:50 split, this would have the highest entropy value of 1, whereas a 100:0 split would result in an entropy of 0(90:10 -> entropy=0.47).  You could then compare this to the entropy of your split. Did you improve? If so, this is probably an okay filter criterea.  Remember, leaf nodes are created when a group moving through a decision tree is pure, in other words, when all the target values are the same.  Therefor, having splits that create low entropy, means you are getting closer and closer to the end of your branch.
