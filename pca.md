@@ -1,0 +1,3 @@
+# Principal Component analysis
+
+Principal component analysis performs orthogonal (preserves the inner product's direction) transformations to convert a set of observations with possibly correlated varisbles into a set of values of linearly uncorrelated variables called principal components.  These components are then treated as the input features for your model. This doesn't always, in fact hardly ever, increases your r^2 score (or accuracy), however, given that it removes correlation between your original features, you are getting a more honest representation from your model, and it is likely to generalize better to unseen data.
